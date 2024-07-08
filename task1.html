@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Energize Fitness - The best fitness gym in the town</title>
+    <link rel="stylesheet" href="task1.css">
+    <link rel="stylesheet" href="utils.css">
+    <script src="task1.js"></script>
+
+    
+</head>
+
+<body class='overflow-x-hidden'>
+    <div class="container mx-auto">
+        <header>
+            <nav class="flex justify-between">
+                <div class="logo font-bold flex items-center text-blue">Energize Fitness</div>
+                <ul class="navbar flex items-center">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact Us</li>
+                    <li><button class="btn">Join Now</button></li>
+                </ul>
+            </nav>
+            <hr>
+        </header>
+        <main class="min-h-screen">
+            <section class="section1">
+                <div class="flex">
+                    <div class="topleft flex flex-col justify-center px-2">
+                        <div class=" text-center">
+                            <img class="dumbellimg" src="data:image/jpeg;base64,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" alt="">
+                        </div>
+                        <h1 class="my-1 text-center">The best fitness Gym in the town is here</h1>
+                        <p class=" text-center">A fitness gym, often referred to simply as a gym, is a place designed to promote physical fitness and overall health. It offers a variety of equipment and activities aimed at improving cardiovascular health, strength, flexibility, and overall well-being. Gyms cater to a diverse range of individuals, from beginners to advanced athletes, and provide a community atmosphere that encourages a healthy lifestyle..</p>
+                            <!-- Display the countdown timer in an element -->
+                            <p class="deal text-center">The deal ends in <span id="demo"></span></p>
+                            <div class="buttons">
+                                <button class="btn">Join now</button>
+                                <button class="btn">Contact Us</button>
+                            </div>
+                    </div>
+                    <div class="topright flex justify-center">
+                        <img class="gymimg" src="https://github.com/CodeWithHarry/HarryFitnessWebsite/blob/main/gym.png?raw=true" alt="">
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <section class="section2">
+                <h1 class="text-center my-2">Pricing</h1>
+                <p class="my-2"><p>Joining a fitness gym can be a transformative experience, offering numerous physical and mental health benefits. Whether you are just starting your fitness journey or are an experienced athlete, there is a gym out there to meet your needs. With the right gym, you can find the support, equipment, and motivation to achieve your fitness goals.</p>
+                <div class="boxes flex justify-center">
+                    <div class="box">
+                        <h2>Free</h2>
+                        <ul>
+                            <li class="highlighted">₹0/month</li>
+                            <li>0 users included</li>
+                            <li>2 GB of storage</li>
+                            <li>Email support</li>
+                            <li>Help center access</li>
+                            <li><button class="btn">Signup Now</button></li>
+                        </ul>
+                    </div>
+                    <div class="box">
+                        <h2>Pro</h2>
+                        <ul>
+                            <li class="highlighted">₹150/month</li>
+                            <li>0 users included</li>
+                            <li>2 GB of storage</li>
+                            <li>Email support</li>
+                            <li>Help center access</li>
+                            <li><button class="btn">Signup Now</button></li>
+                        </ul>
+                    </div>
+                    <div class="box">
+                        <h2>Enterprise</h2>
+                        <ul>
+                            <li class="highlighted">₹500/month</li>
+                            <li>0 users included</li>
+                            <li>2 GB of storage</li>
+                            <li>Email support</li>
+                            <li>Help center access</li>
+                            <li><button class="btn">Signup Now</button></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </section>
+            <hr>
+            <section class="section3">
+                <h1 class="text-center my-2">Compare Plans</h1>
+                <div class="container plantable">
+                    <table class="table text-center">
+                      <thead>
+                        <tr>
+                          <th></th><th>Free</th>
+                          <th>Pro</th>
+                          <th>Enterprise</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row" class="text-start">Public</th>
+                          <td>Yes</svg></td>
+                          <td>Yes</svg></td>
+                          <td>Yes</svg></td>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="text-start">Private</th>
+                          <td>-</td>
+                          <td>Yes</svg></td>
+                          <td>Yes</svg></td>
+                        </tr>
+                      </tbody>
+              
+                      <tbody>
+                        <tr>
+                          <th scope="row" class="text-start">Permissions</th>
+                          <td>Yes</svg></td>
+                          <td>Yes</svg></td>
+                          <td>Yes</svg></td>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="text-start">Sharing</th>
+                          <td>-</td>
+                          <td>Yes</svg></td>
+                          <td>Yes</svg></td>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="text-start">Unlimited members</th>
+                          <td>-</td>
+                          <td>Yes</svg></td>
+                          <td>Yes</svg></td>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="text-start">Extra security</th>
+                          <td>-</td>
+                          <td>-</td>
+                          <td>Yes</svg></td>
+                        </tr>
+                      </tbody>
+                    </table>
+            </section>
+            <hr>
+        </main>
+       
+
+    </div>
+    
+</body>
+
+</html>
